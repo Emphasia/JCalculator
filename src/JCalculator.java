@@ -22,9 +22,13 @@
 "清空",
 */
 public class JCalculator {
-    public static void main(String[] args){
-        String string="1+2*2+3";
-        Expression expr=new Expression(string);
-        System.out.println(expr.value());
+    public static void main(String[] args) {
+        String string = "1+2*2+3";
+        Expression expr = new Expression(string);
+        try {
+            System.out.println(expr.value());
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
     }
 }
