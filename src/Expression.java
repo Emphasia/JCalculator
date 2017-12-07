@@ -1,7 +1,8 @@
 public class Expression {
     public String expression;
-    public Key[] exprKeyArray = new Key[101];
-    private int exprKeyArrayCnt = 0;
+    public Key[] exprKeyArray = new Key[exprKeyArrayMAXCnt];
+    public int exprKeyArrayCnt = 0;
+    private static int exprKeyArrayMAXCnt = 100;
 
     Expression(String expr) {
         expression = expr;
@@ -11,53 +12,37 @@ public class Expression {
         Parse();
     }
 
-    //运算符
-    static final String BRACKET_L = "(";//
-    static final String BRACKET_R = ")";//
-    static final String ADD = "+";//
-    static final String SUB = "-";//
-    static final String MUL = "*";//
-    static final String DIV = "/";//
-    /*
-    static final String DIV2 = "div";//
-    static final String MOD = "mod";//
-    static final String SIN = "sin";//
-    static final String COS = "cos";//
-    static final String TAN = "tan";//
-    static final String ARCSIN = "arcsin";//
-    static final String ARCCOS = "arccos";//
-    static final String ARCTAN = "arctan";//
-    */
-    //enum KeyStrEnum {ADD,SUB,MUL,DIV};
-    static final String KeyStr[] = {ADD, SUB, MUL, DIV};
-    final int KeyIndex[][] = new int[KeyStr.length][];
+    final int KeyIndex[][] = new int[Key.Op.length][];
 
     final void Parse() {                            //将String类型表达式转换成Key[]
         int p = 1;
         String noMatch = "";
         for (int i = 0; i < expression.length(); i++) {
             int j;
-            for (j = 0; j < KeyStr.length; j++) {
-                if (expression.substring(i, i + KeyStr[j].length()).equals(KeyStr[j])) {
-                    if (noMatch != "") {
-                        if (isNum(noMatch)) {
-                            exprKeyArray[p++] = new Key(Double.parseDouble(noMatch));
-                            noMatch = "";
+            for (j = 0; j < Key.Op.length; j++) {
+                String keyStr = Key.Op[j].KeyStr;
+                if (i + keyStr.length() <= expression.length())
+                    if (expression.substring(i, i + keyStr.length()).equals(keyStr)) {
+                        if (noMatch != "") {
+                            if (isNum(noMatch)) {
+                                exprKeyArray[p++] = new Key(Double.parseDouble(noMatch));
+                                noMatch = "";
+                            }
+                            //else thorw error
                         }
-                        //else thorw error
+                        exprKeyArray[p++] = new Key(keyStr);
+                        i += keyStr.length() - 1;
+                        break;
                     }
-                    exprKeyArray[p++] = new Key(KeyStr[j]);
-                    i += KeyStr[j].length() - 1;
-                    break;
-                }
             }
-            if (j == KeyStr.length) noMatch += expression.charAt(i);
+            if (j == Key.Op.length) noMatch += expression.charAt(i);
         }
         if (noMatch != "" & isNum(noMatch)) {
-            exprKeyArray[p] = new Key(Double.parseDouble(noMatch));
+            exprKeyArray[p++] = new Key(Double.parseDouble(noMatch));
             //else thorw error
         }
-        exprKeyArray[0] = new Key(String.valueOf(p));//保存Key[]即exprKeyArray个数
+        // exprKeyArray[0] = new Key(String.valueOf(p));
+        exprKeyArrayCnt = --p;// 保存Key[]即exprKeyArray个数
         /*
         for (int i = 0; i < KeyStr.length; i++) {
             int j = 0, pos = 0;
@@ -103,6 +88,7 @@ public class Expression {
         return exprKeyArray[pos];
     }
 
+    /*
     public Key NextKeyOf(int pos) {
         if (exprKeyArray[pos + 1].isNULL)
             return NextKeyOf(pos + 2);
@@ -114,19 +100,25 @@ public class Expression {
             return NextKeyOf(pos - 2);
         return exprKeyArray[pos - 1];
     }
+    */
 
     public int NextKeyIndexOf(int pos) {
-        if (pos > Integer.parseInt(exprKeyArray[0].value)) return Integer.parseInt(exprKeyArray[0].value);
-        if (exprKeyArray[pos + 1].isNULL)
-            return NextKeyIndexOf(pos + 2);
-        return pos + 1;
+        if (pos > exprKeyArrayCnt){
+            //exprKeyArrayCnt=PreKeyIndexOf(pos);
+            return exprKeyArrayCnt+1;
+        }
+        pos++;
+        if (exprKeyArray[pos].isNULL)
+            return NextKeyIndexOf(pos);
+        return pos;
     }
 
     public int PreKeyIndexOf(int pos) {
-        if (pos < 1) return 1;
-        if (exprKeyArray[pos - 1].isNULL)
-            return PreKeyIndexOf(pos - 2);
-        return pos - 1;
+        //if (pos < 1) return 1;
+        pos--;
+        if (exprKeyArray[pos].isNULL)
+            return PreKeyIndexOf(pos);
+        return pos;
     }
 
     /*
@@ -174,10 +166,10 @@ public class Expression {
         return exprKeyArray[pos].getString();
     }
 
-    //1+2*2+3
+    //1+2*(2+3)
     public void Calculate(int posA, int posB) {                //递归计算
-        for (int i = 0; i < Key.Op.length; i++) {
-            for (int j = posA; j <= posB; j++) {
+        for (int i : Key.Priority) {
+            for (int j = posA; j <= posB & j<=exprKeyArrayCnt; j = NextKeyIndexOf(j)) {
                 if (exprKeyArray[j].value == Key.Op[i].KeyStr)
                     Key.Op[i].Operate(this, j);
                 //for(int pos:KeyIndex[i])
@@ -188,7 +180,7 @@ public class Expression {
     public double value() throws Exception {
         double value = 0;
         try {
-            Calculate(1, Integer.parseInt(exprKeyArray[0].value));
+            Calculate(1, exprKeyArrayCnt);
             value = KeyOf(1).getDouble();
         } catch (Exception e) {
             e.printStackTrace();

@@ -4,13 +4,12 @@ class Key {
 
     boolean isNULL = true;
 
-    boolean isOP;
-    boolean isNum;
+    private boolean isOP;
+    private boolean isNum;
 
     boolean isOP() {
         return isOP;
     }
-
     boolean isNum() {
         return isNum;
     }
@@ -36,9 +35,20 @@ class Key {
     }
 
     static Operator[] Op = {
-            new Operator_Mul(),
-            new Operator_Add()
+            //0
+            new Operator_ADD(),
+            new Operator_SUB(),
+            new Operator_MUL(),
+            new Operator_DIV(),
+            new Operator_DIV2(),
+            new Operator_MOD(),
+            //6
+            new Operator_COMMA(),
+            new Operator_BRACKET_L(),
+            new Operator_BRACKET_R(),
     };
+
+    static int[] Priority = {7, 5, 2, 3, 0, 1};//根据Op[]中运算符序号
 
     public double getDouble() throws Exception {
         if (isNULL) throw new Exception();

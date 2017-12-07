@@ -2,10 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="b89423a3-c1a0-454a-af63-b5764cbb37cb" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Key.java" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/Operator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Expression.java" afterPath="$PROJECT_DIR$/src/Expression.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/JCalculator.java" afterPath="$PROJECT_DIR$/src/JCalculator.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Key.java" afterPath="$PROJECT_DIR$/src/Key.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Operator.java" afterPath="$PROJECT_DIR$/src/Operator.java" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -34,8 +36,8 @@
       <file leaf-file-name="JCalculator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/JCalculator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="345">
-              <caret line="15" column="7" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
+            <state relative-caret-position="552">
+              <caret line="24" column="34" lean-forward="false" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="34" />
               <folding />
             </state>
           </provider>
@@ -44,17 +46,18 @@
       <file leaf-file-name="Expression.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/Expression.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="531">
-              <caret line="205" column="46" lean-forward="false" selection-start-line="205" selection-start-column="46" selection-end-line="205" selection-end-column="46" />
+            <state relative-caret-position="462">
+              <caret line="173" column="47" lean-forward="true" selection-start-line="173" selection-start-column="47" selection-end-line="173" selection-end-column="47" />
               <folding>
+                <element signature="method#Expression#0;class#Expression#0" expanded="false" />
                 <element signature="method#isNum#0;class#Expression#0" expanded="false" />
-                <element signature="method#NextKeyOf#0;class#Expression#0" expanded="false" />
-                <element signature="method#PreKeyOf#0;class#Expression#0" expanded="false" />
                 <element signature="method#setexprKeyArray#1;class#Expression#0" expanded="false" />
                 <element signature="method#getexprKeyArrayDouble#0;class#Expression#0" expanded="false" />
                 <element signature="method#getexprKeyArrayString#0;class#Expression#0" expanded="false" />
-                <marker date="1512568028483" expanded="false" signature="3064:3519" ph="..." />
-                <marker date="1512568028483" expanded="false" signature="4497:4731" ph="..." />
+                <marker date="1512739258210" expanded="false" signature="2231:2734" ph="..." />
+                <marker date="1512739258210" expanded="false" signature="3064:3190" ph="{...}" />
+                <marker date="1512739258210" expanded="false" signature="3225:3351" ph="{...}" />
+                <marker date="1512739258210" expanded="false" signature="3847:4153" ph="..." />
               </folding>
             </state>
           </provider>
@@ -63,9 +66,13 @@
       <file leaf-file-name="Key.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Key.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="920">
-              <caret line="44" column="30" lean-forward="false" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
-              <folding />
+            <state relative-caret-position="322">
+              <caret line="50" column="46" lean-forward="false" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
+              <folding>
+                <element signature="method#Key#0;class#Key#0" expanded="false" />
+                <element signature="method#Key#1;class#Key#0" expanded="false" />
+                <element signature="method#Key#2;class#Key#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -73,9 +80,19 @@
       <file leaf-file-name="Operator.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/Operator.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="29" column="68" lean-forward="false" selection-start-line="29" selection-start-column="68" selection-end-line="29" selection-end-column="68" />
-              <folding />
+            <state relative-caret-position="460">
+              <caret line="182" column="48" lean-forward="false" selection-start-line="182" selection-start-column="48" selection-end-line="182" selection-end-column="48" />
+              <folding>
+                <element signature="class#Operator_ADD#0" expanded="false" />
+                <element signature="class#Operator_SUB#0" expanded="false" />
+                <element signature="class#Operator_MUL#0" expanded="false" />
+                <element signature="class#Operator_DIV#0" expanded="false" />
+                <element signature="class#Operator_DIV2#0" expanded="false" />
+                <element signature="class#Operator_MOD#0" expanded="false" />
+                <element signature="class#Operator_COMMA#0" expanded="false" />
+                <element signature="class#Operator_BRACKET_L#0" expanded="false" />
+                <element signature="class#Operator_BRACKET_R#0" expanded="false" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -92,16 +109,11 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find />
-      <find>isNull</find>
-      <find>Cal</find>
-      <find>Key</find>
-      <find>exprKeyArray.length</find>
-      <find>KeyOf(bPos).getDouble()</find>
-      <find>length</find>
     </findStrings>
     <replaceStrings>
       <replace>\t</replace>
       <replace>isNULL</replace>
+      <replace />
     </replaceStrings>
   </component>
   <component name="Git.Settings">
@@ -118,8 +130,8 @@
         <option value="$PROJECT_DIR$/src/MainForm.form" />
         <option value="$PROJECT_DIR$/src/JCalculator.java" />
         <option value="$PROJECT_DIR$/src/Expression.java" />
-        <option value="$PROJECT_DIR$/src/Operator.java" />
         <option value="$PROJECT_DIR$/src/Key.java" />
+        <option value="$PROJECT_DIR$/src/Operator.java" />
       </list>
     </option>
   </component>
@@ -152,7 +164,7 @@
     </navigator>
     <panes>
       <pane id="Scratches" />
-      <pane id="PackagesPane" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -169,7 +181,7 @@
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
+      <pane id="PackagesPane" />
       <pane id="AndroidView" />
     </panes>
   </component>
@@ -329,11 +341,16 @@
       <workItem from="1512555816566" duration="9476000" />
       <workItem from="1512569383922" duration="92000" />
       <workItem from="1512569500481" duration="25000" />
+      <workItem from="1512572378494" duration="449000" />
+      <workItem from="1512611900989" duration="2288000" />
+      <workItem from="1512616240508" duration="16528000" />
+      <workItem from="1512718243136" duration="6446000" />
+      <workItem from="1512738530915" duration="801000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="71529000" />
+    <option name="totallyTimeSpent" value="98041000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -350,6 +367,7 @@
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Palette&#9;" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3135965" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -359,6 +377,7 @@
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.14739583" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
@@ -369,11 +388,9 @@
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Tool" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Image Layers" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Capture Analysis" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32894737" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Theme Preview" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
@@ -390,6 +407,32 @@
       </list>
     </option>
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State>
+              <option name="RECENTLY_FILTERED_USER_GROUPS">
+                <collection />
+              </option>
+              <option name="RECENTLY_FILTERED_BRANCH_GROUPS">
+                <collection />
+              </option>
+              <option name="COLUMN_ORDER">
+                <list>
+                  <option value="0" />
+                  <option value="1" />
+                  <option value="2" />
+                  <option value="3" />
+                </list>
+              </option>
+            </State>
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="VcsContentAnnotationSettings">
     <option name="myLimit" value="2678400000" />
   </component>
@@ -397,66 +440,40 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Operator.java</url>
-          <line>28</line>
-          <properties />
-          <option name="timeStamp" value="67" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Operator.java</url>
-          <line>55</line>
-          <properties />
-          <option name="timeStamp" value="68" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
           <url>file://$PROJECT_DIR$/src/Expression.java</url>
-          <line>205</line>
+          <line>173</line>
           <properties />
-          <option name="timeStamp" value="70" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Expression.java</url>
-          <line>146</line>
-          <properties />
-          <option name="timeStamp" value="71" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/Expression.java</url>
-          <line>152</line>
-          <properties />
-          <option name="timeStamp" value="72" />
+          <option name="timeStamp" value="95" />
         </line-breakpoint>
       </breakpoints>
-      <option name="time" value="75" />
+      <option name="time" value="100" />
     </breakpoint-manager>
-    <watches-manager />
+    <watches-manager>
+      <configuration name="Application">
+        <watch expression="exprKeyArray" language="JAVA" />
+        <watch expression="Key.Op[i].KeyStr" />
+      </configuration>
+    </watches-manager>
   </component>
   <component name="antWorkspaceConfiguration">
     <option name="IS_AUTOSCROLL_TO_SOURCE" value="false" />
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/JCalculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="805">
-          <caret line="35" column="0" lean-forward="false" selection-start-line="35" selection-start-column="0" selection-end-line="35" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/Expression.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="46">
           <caret line="2" column="0" lean-forward="true" selection-start-line="2" selection-start-column="0" selection-end-line="2" selection-end-column="0" />
           <folding>
+            <element signature="method#Expression#0;class#Expression#0" expanded="false" />
             <element signature="method#isNum#0;class#Expression#0" expanded="false" />
-            <element signature="method#NextKeyOf#0;class#Expression#0" expanded="false" />
-            <element signature="method#PreKeyOf#0;class#Expression#0" expanded="false" />
             <element signature="method#setexprKeyArray#1;class#Expression#0" expanded="false" />
             <element signature="method#getexprKeyArrayDouble#0;class#Expression#0" expanded="false" />
             <element signature="method#getexprKeyArrayString#0;class#Expression#0" expanded="false" />
-            <marker date="1512568028483" expanded="false" signature="3064:3519" ph="..." />
-            <marker date="1512568028483" expanded="false" signature="4497:4731" ph="..." />
+            <marker date="1512739258210" expanded="false" signature="2231:2734" ph="..." />
+            <marker date="1512739258210" expanded="false" signature="3064:3190" ph="{...}" />
+            <marker date="1512739258210" expanded="false" signature="3225:3351" ph="{...}" />
+            <marker date="1512739258210" expanded="false" signature="3847:4153" ph="..." />
           </folding>
         </state>
       </provider>
@@ -474,14 +491,15 @@
         <state relative-caret-position="4163">
           <caret line="258" column="26" lean-forward="true" selection-start-line="258" selection-start-column="26" selection-end-line="258" selection-end-column="26" />
           <folding>
+            <element signature="method#Expression#0;class#Expression#0" expanded="false" />
             <element signature="method#isNum#0;class#Expression#0" expanded="false" />
-            <element signature="method#NextKeyOf#0;class#Expression#0" expanded="false" />
-            <element signature="method#PreKeyOf#0;class#Expression#0" expanded="false" />
             <element signature="method#setexprKeyArray#1;class#Expression#0" expanded="false" />
             <element signature="method#getexprKeyArrayDouble#0;class#Expression#0" expanded="false" />
             <element signature="method#getexprKeyArrayString#0;class#Expression#0" expanded="false" />
-            <marker date="1512568028483" expanded="false" signature="3064:3519" ph="..." />
-            <marker date="1512568028483" expanded="false" signature="4497:4731" ph="..." />
+            <marker date="1512739258210" expanded="false" signature="2231:2734" ph="..." />
+            <marker date="1512739258210" expanded="false" signature="3064:3190" ph="{...}" />
+            <marker date="1512739258210" expanded="false" signature="3225:3351" ph="{...}" />
+            <marker date="1512739258210" expanded="false" signature="3847:4153" ph="..." />
           </folding>
         </state>
       </provider>
@@ -499,14 +517,15 @@
         <state relative-caret-position="5934">
           <caret line="258" column="27" lean-forward="true" selection-start-line="258" selection-start-column="27" selection-end-line="258" selection-end-column="27" />
           <folding>
+            <element signature="method#Expression#0;class#Expression#0" expanded="false" />
             <element signature="method#isNum#0;class#Expression#0" expanded="false" />
-            <element signature="method#NextKeyOf#0;class#Expression#0" expanded="false" />
-            <element signature="method#PreKeyOf#0;class#Expression#0" expanded="false" />
             <element signature="method#setexprKeyArray#1;class#Expression#0" expanded="false" />
             <element signature="method#getexprKeyArrayDouble#0;class#Expression#0" expanded="false" />
             <element signature="method#getexprKeyArrayString#0;class#Expression#0" expanded="false" />
-            <marker date="1512568028483" expanded="false" signature="3064:3519" ph="..." />
-            <marker date="1512568028483" expanded="false" signature="4497:4731" ph="..." />
+            <marker date="1512739258210" expanded="false" signature="2231:2734" ph="..." />
+            <marker date="1512739258210" expanded="false" signature="3064:3190" ph="{...}" />
+            <marker date="1512739258210" expanded="false" signature="3225:3351" ph="{...}" />
+            <marker date="1512739258210" expanded="false" signature="3847:4153" ph="..." />
           </folding>
         </state>
       </provider>
@@ -516,14 +535,15 @@
         <state relative-caret-position="4278">
           <caret line="284" column="48" lean-forward="false" selection-start-line="284" selection-start-column="48" selection-end-line="284" selection-end-column="48" />
           <folding>
+            <element signature="method#Expression#0;class#Expression#0" expanded="false" />
             <element signature="method#isNum#0;class#Expression#0" expanded="false" />
-            <element signature="method#NextKeyOf#0;class#Expression#0" expanded="false" />
-            <element signature="method#PreKeyOf#0;class#Expression#0" expanded="false" />
             <element signature="method#setexprKeyArray#1;class#Expression#0" expanded="false" />
             <element signature="method#getexprKeyArrayDouble#0;class#Expression#0" expanded="false" />
             <element signature="method#getexprKeyArrayString#0;class#Expression#0" expanded="false" />
-            <marker date="1512568028483" expanded="false" signature="3064:3519" ph="..." />
-            <marker date="1512568028483" expanded="false" signature="4497:4731" ph="..." />
+            <marker date="1512739258210" expanded="false" signature="2231:2734" ph="..." />
+            <marker date="1512739258210" expanded="false" signature="3064:3190" ph="{...}" />
+            <marker date="1512739258210" expanded="false" signature="3225:3351" ph="{...}" />
+            <marker date="1512739258210" expanded="false" signature="3847:4153" ph="..." />
           </folding>
         </state>
       </provider>
@@ -549,14 +569,15 @@
         <state relative-caret-position="6532">
           <caret line="284" column="48" lean-forward="false" selection-start-line="284" selection-start-column="48" selection-end-line="284" selection-end-column="48" />
           <folding>
+            <element signature="method#Expression#0;class#Expression#0" expanded="false" />
             <element signature="method#isNum#0;class#Expression#0" expanded="false" />
-            <element signature="method#NextKeyOf#0;class#Expression#0" expanded="false" />
-            <element signature="method#PreKeyOf#0;class#Expression#0" expanded="false" />
             <element signature="method#setexprKeyArray#1;class#Expression#0" expanded="false" />
             <element signature="method#getexprKeyArrayDouble#0;class#Expression#0" expanded="false" />
             <element signature="method#getexprKeyArrayString#0;class#Expression#0" expanded="false" />
-            <marker date="1512568028483" expanded="false" signature="3064:3519" ph="..." />
-            <marker date="1512568028483" expanded="false" signature="4497:4731" ph="..." />
+            <marker date="1512739258210" expanded="false" signature="2231:2734" ph="..." />
+            <marker date="1512739258210" expanded="false" signature="3064:3190" ph="{...}" />
+            <marker date="1512739258210" expanded="false" signature="3225:3351" ph="{...}" />
+            <marker date="1512739258210" expanded="false" signature="3847:4153" ph="..." />
           </folding>
         </state>
       </provider>
@@ -574,14 +595,15 @@
         <state relative-caret-position="5520">
           <caret line="240" column="5" lean-forward="true" selection-start-line="240" selection-start-column="5" selection-end-line="240" selection-end-column="5" />
           <folding>
+            <element signature="method#Expression#0;class#Expression#0" expanded="false" />
             <element signature="method#isNum#0;class#Expression#0" expanded="false" />
-            <element signature="method#NextKeyOf#0;class#Expression#0" expanded="false" />
-            <element signature="method#PreKeyOf#0;class#Expression#0" expanded="false" />
             <element signature="method#setexprKeyArray#1;class#Expression#0" expanded="false" />
             <element signature="method#getexprKeyArrayDouble#0;class#Expression#0" expanded="false" />
             <element signature="method#getexprKeyArrayString#0;class#Expression#0" expanded="false" />
-            <marker date="1512568028483" expanded="false" signature="3064:3519" ph="..." />
-            <marker date="1512568028483" expanded="false" signature="4497:4731" ph="..." />
+            <marker date="1512739258210" expanded="false" signature="2231:2734" ph="..." />
+            <marker date="1512739258210" expanded="false" signature="3064:3190" ph="{...}" />
+            <marker date="1512739258210" expanded="false" signature="3225:3351" ph="{...}" />
+            <marker date="1512739258210" expanded="false" signature="3847:4153" ph="..." />
           </folding>
         </state>
       </provider>
@@ -599,14 +621,15 @@
         <state relative-caret-position="5727">
           <caret line="249" column="25" lean-forward="true" selection-start-line="249" selection-start-column="25" selection-end-line="249" selection-end-column="25" />
           <folding>
+            <element signature="method#Expression#0;class#Expression#0" expanded="false" />
             <element signature="method#isNum#0;class#Expression#0" expanded="false" />
-            <element signature="method#NextKeyOf#0;class#Expression#0" expanded="false" />
-            <element signature="method#PreKeyOf#0;class#Expression#0" expanded="false" />
             <element signature="method#setexprKeyArray#1;class#Expression#0" expanded="false" />
             <element signature="method#getexprKeyArrayDouble#0;class#Expression#0" expanded="false" />
             <element signature="method#getexprKeyArrayString#0;class#Expression#0" expanded="false" />
-            <marker date="1512568028483" expanded="false" signature="3064:3519" ph="..." />
-            <marker date="1512568028483" expanded="false" signature="4497:4731" ph="..." />
+            <marker date="1512739258210" expanded="false" signature="2231:2734" ph="..." />
+            <marker date="1512739258210" expanded="false" signature="3064:3190" ph="{...}" />
+            <marker date="1512739258210" expanded="false" signature="3225:3351" ph="{...}" />
+            <marker date="1512739258210" expanded="false" signature="3847:4153" ph="..." />
           </folding>
         </state>
       </provider>
@@ -624,14 +647,15 @@
         <state relative-caret-position="1081">
           <caret line="50" column="17" lean-forward="false" selection-start-line="50" selection-start-column="17" selection-end-line="50" selection-end-column="17" />
           <folding>
+            <element signature="method#Expression#0;class#Expression#0" expanded="false" />
             <element signature="method#isNum#0;class#Expression#0" expanded="false" />
-            <element signature="method#NextKeyOf#0;class#Expression#0" expanded="false" />
-            <element signature="method#PreKeyOf#0;class#Expression#0" expanded="false" />
             <element signature="method#setexprKeyArray#1;class#Expression#0" expanded="false" />
             <element signature="method#getexprKeyArrayDouble#0;class#Expression#0" expanded="false" />
             <element signature="method#getexprKeyArrayString#0;class#Expression#0" expanded="false" />
-            <marker date="1512568028483" expanded="false" signature="3064:3519" ph="..." />
-            <marker date="1512568028483" expanded="false" signature="4497:4731" ph="..." />
+            <marker date="1512739258210" expanded="false" signature="2231:2734" ph="..." />
+            <marker date="1512739258210" expanded="false" signature="3064:3190" ph="{...}" />
+            <marker date="1512739258210" expanded="false" signature="3225:3351" ph="{...}" />
+            <marker date="1512739258210" expanded="false" signature="3847:4153" ph="..." />
           </folding>
         </state>
       </provider>
@@ -649,14 +673,15 @@
         <state relative-caret-position="1196">
           <caret line="55" column="0" lean-forward="false" selection-start-line="55" selection-start-column="0" selection-end-line="55" selection-end-column="0" />
           <folding>
+            <element signature="method#Expression#0;class#Expression#0" expanded="false" />
             <element signature="method#isNum#0;class#Expression#0" expanded="false" />
-            <element signature="method#NextKeyOf#0;class#Expression#0" expanded="false" />
-            <element signature="method#PreKeyOf#0;class#Expression#0" expanded="false" />
             <element signature="method#setexprKeyArray#1;class#Expression#0" expanded="false" />
             <element signature="method#getexprKeyArrayDouble#0;class#Expression#0" expanded="false" />
             <element signature="method#getexprKeyArrayString#0;class#Expression#0" expanded="false" />
-            <marker date="1512568028483" expanded="false" signature="3064:3519" ph="..." />
-            <marker date="1512568028483" expanded="false" signature="4497:4731" ph="..." />
+            <marker date="1512739258210" expanded="false" signature="2231:2734" ph="..." />
+            <marker date="1512739258210" expanded="false" signature="3064:3190" ph="{...}" />
+            <marker date="1512739258210" expanded="false" signature="3225:3351" ph="{...}" />
+            <marker date="1512739258210" expanded="false" signature="3847:4153" ph="..." />
           </folding>
         </state>
       </provider>
@@ -674,14 +699,15 @@
         <state relative-caret-position="230">
           <caret line="11" column="0" lean-forward="false" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
+            <element signature="method#Expression#0;class#Expression#0" expanded="false" />
             <element signature="method#isNum#0;class#Expression#0" expanded="false" />
-            <element signature="method#NextKeyOf#0;class#Expression#0" expanded="false" />
-            <element signature="method#PreKeyOf#0;class#Expression#0" expanded="false" />
             <element signature="method#setexprKeyArray#1;class#Expression#0" expanded="false" />
             <element signature="method#getexprKeyArrayDouble#0;class#Expression#0" expanded="false" />
             <element signature="method#getexprKeyArrayString#0;class#Expression#0" expanded="false" />
-            <marker date="1512568028483" expanded="false" signature="3064:3519" ph="..." />
-            <marker date="1512568028483" expanded="false" signature="4497:4731" ph="..." />
+            <marker date="1512739258210" expanded="false" signature="2231:2734" ph="..." />
+            <marker date="1512739258210" expanded="false" signature="3064:3190" ph="{...}" />
+            <marker date="1512739258210" expanded="false" signature="3225:3351" ph="{...}" />
+            <marker date="1512739258210" expanded="false" signature="3847:4153" ph="..." />
           </folding>
         </state>
       </provider>
@@ -699,14 +725,15 @@
         <state relative-caret-position="253">
           <caret line="11" column="0" lean-forward="true" selection-start-line="11" selection-start-column="0" selection-end-line="11" selection-end-column="0" />
           <folding>
+            <element signature="method#Expression#0;class#Expression#0" expanded="false" />
             <element signature="method#isNum#0;class#Expression#0" expanded="false" />
-            <element signature="method#NextKeyOf#0;class#Expression#0" expanded="false" />
-            <element signature="method#PreKeyOf#0;class#Expression#0" expanded="false" />
             <element signature="method#setexprKeyArray#1;class#Expression#0" expanded="false" />
             <element signature="method#getexprKeyArrayDouble#0;class#Expression#0" expanded="false" />
             <element signature="method#getexprKeyArrayString#0;class#Expression#0" expanded="false" />
-            <marker date="1512568028483" expanded="false" signature="3064:3519" ph="..." />
-            <marker date="1512568028483" expanded="false" signature="4497:4731" ph="..." />
+            <marker date="1512739258210" expanded="false" signature="2231:2734" ph="..." />
+            <marker date="1512739258210" expanded="false" signature="3064:3190" ph="{...}" />
+            <marker date="1512739258210" expanded="false" signature="3225:3351" ph="{...}" />
+            <marker date="1512739258210" expanded="false" signature="3847:4153" ph="..." />
           </folding>
         </state>
       </provider>
@@ -724,14 +751,15 @@
         <state relative-caret-position="1058">
           <caret line="46" column="0" lean-forward="true" selection-start-line="46" selection-start-column="0" selection-end-line="46" selection-end-column="0" />
           <folding>
+            <element signature="method#Expression#0;class#Expression#0" expanded="false" />
             <element signature="method#isNum#0;class#Expression#0" expanded="false" />
-            <element signature="method#NextKeyOf#0;class#Expression#0" expanded="false" />
-            <element signature="method#PreKeyOf#0;class#Expression#0" expanded="false" />
             <element signature="method#setexprKeyArray#1;class#Expression#0" expanded="false" />
             <element signature="method#getexprKeyArrayDouble#0;class#Expression#0" expanded="false" />
             <element signature="method#getexprKeyArrayString#0;class#Expression#0" expanded="false" />
-            <marker date="1512568028483" expanded="false" signature="3064:3519" ph="..." />
-            <marker date="1512568028483" expanded="false" signature="4497:4731" ph="..." />
+            <marker date="1512739258210" expanded="false" signature="2231:2734" ph="..." />
+            <marker date="1512739258210" expanded="false" signature="3064:3190" ph="{...}" />
+            <marker date="1512739258210" expanded="false" signature="3225:3351" ph="{...}" />
+            <marker date="1512739258210" expanded="false" signature="3847:4153" ph="..." />
           </folding>
         </state>
       </provider>
@@ -750,14 +778,15 @@
         <state relative-caret-position="115">
           <caret line="7" column="27" lean-forward="true" selection-start-line="7" selection-start-column="27" selection-end-line="7" selection-end-column="27" />
           <folding>
+            <element signature="method#Expression#0;class#Expression#0" expanded="false" />
             <element signature="method#isNum#0;class#Expression#0" expanded="false" />
-            <element signature="method#NextKeyOf#0;class#Expression#0" expanded="false" />
-            <element signature="method#PreKeyOf#0;class#Expression#0" expanded="false" />
             <element signature="method#setexprKeyArray#1;class#Expression#0" expanded="false" />
             <element signature="method#getexprKeyArrayDouble#0;class#Expression#0" expanded="false" />
             <element signature="method#getexprKeyArrayString#0;class#Expression#0" expanded="false" />
-            <marker date="1512568028483" expanded="false" signature="3064:3519" ph="..." />
-            <marker date="1512568028483" expanded="false" signature="4497:4731" ph="..." />
+            <marker date="1512739258210" expanded="false" signature="2231:2734" ph="..." />
+            <marker date="1512739258210" expanded="false" signature="3064:3190" ph="{...}" />
+            <marker date="1512739258210" expanded="false" signature="3225:3351" ph="{...}" />
+            <marker date="1512739258210" expanded="false" signature="3847:4153" ph="..." />
           </folding>
         </state>
       </provider>
@@ -775,14 +804,15 @@
         <state relative-caret-position="23">
           <caret line="1" column="23" lean-forward="false" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
           <folding>
+            <element signature="method#Expression#0;class#Expression#0" expanded="false" />
             <element signature="method#isNum#0;class#Expression#0" expanded="false" />
-            <element signature="method#NextKeyOf#0;class#Expression#0" expanded="false" />
-            <element signature="method#PreKeyOf#0;class#Expression#0" expanded="false" />
             <element signature="method#setexprKeyArray#1;class#Expression#0" expanded="false" />
             <element signature="method#getexprKeyArrayDouble#0;class#Expression#0" expanded="false" />
             <element signature="method#getexprKeyArrayString#0;class#Expression#0" expanded="false" />
-            <marker date="1512568028483" expanded="false" signature="3064:3519" ph="..." />
-            <marker date="1512568028483" expanded="false" signature="4497:4731" ph="..." />
+            <marker date="1512739258210" expanded="false" signature="2231:2734" ph="..." />
+            <marker date="1512739258210" expanded="false" signature="3064:3190" ph="{...}" />
+            <marker date="1512739258210" expanded="false" signature="3225:3351" ph="{...}" />
+            <marker date="1512739258210" expanded="false" signature="3847:4153" ph="..." />
           </folding>
         </state>
       </provider>
@@ -800,14 +830,15 @@
         <state relative-caret-position="23">
           <caret line="1" column="23" lean-forward="false" selection-start-line="1" selection-start-column="23" selection-end-line="1" selection-end-column="23" />
           <folding>
+            <element signature="method#Expression#0;class#Expression#0" expanded="false" />
             <element signature="method#isNum#0;class#Expression#0" expanded="false" />
-            <element signature="method#NextKeyOf#0;class#Expression#0" expanded="false" />
-            <element signature="method#PreKeyOf#0;class#Expression#0" expanded="false" />
             <element signature="method#setexprKeyArray#1;class#Expression#0" expanded="false" />
             <element signature="method#getexprKeyArrayDouble#0;class#Expression#0" expanded="false" />
             <element signature="method#getexprKeyArrayString#0;class#Expression#0" expanded="false" />
-            <marker date="1512568028483" expanded="false" signature="3064:3519" ph="..." />
-            <marker date="1512568028483" expanded="false" signature="4497:4731" ph="..." />
+            <marker date="1512739258210" expanded="false" signature="2231:2734" ph="..." />
+            <marker date="1512739258210" expanded="false" signature="3064:3190" ph="{...}" />
+            <marker date="1512739258210" expanded="false" signature="3225:3351" ph="{...}" />
+            <marker date="1512739258210" expanded="false" signature="3847:4153" ph="..." />
           </folding>
         </state>
       </provider>
@@ -917,47 +948,71 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="182">
           <caret line="579" column="0" lean-forward="false" selection-start-line="579" selection-start-column="0" selection-end-line="579" selection-end-column="0" />
-          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/JCalculator.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="345">
-          <caret line="15" column="7" lean-forward="false" selection-start-line="15" selection-start-column="7" selection-end-line="15" selection-end-column="7" />
-          <folding />
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="0">
+            <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Operator.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="621">
-          <caret line="29" column="68" lean-forward="false" selection-start-line="29" selection-start-column="68" selection-end-line="29" selection-end-column="68" />
-          <folding />
+        <state relative-caret-position="460">
+          <caret line="182" column="48" lean-forward="false" selection-start-line="182" selection-start-column="48" selection-end-line="182" selection-end-column="48" />
+          <folding>
+            <element signature="class#Operator_ADD#0" expanded="false" />
+            <element signature="class#Operator_SUB#0" expanded="false" />
+            <element signature="class#Operator_MUL#0" expanded="false" />
+            <element signature="class#Operator_DIV#0" expanded="false" />
+            <element signature="class#Operator_DIV2#0" expanded="false" />
+            <element signature="class#Operator_MOD#0" expanded="false" />
+            <element signature="class#Operator_COMMA#0" expanded="false" />
+            <element signature="class#Operator_BRACKET_L#0" expanded="false" />
+            <element signature="class#Operator_BRACKET_R#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Key.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="920">
-          <caret line="44" column="30" lean-forward="false" selection-start-line="44" selection-start-column="30" selection-end-line="44" selection-end-column="30" />
+        <state relative-caret-position="322">
+          <caret line="50" column="46" lean-forward="false" selection-start-line="50" selection-start-column="46" selection-end-line="50" selection-end-column="46" />
+          <folding>
+            <element signature="method#Key#0;class#Key#0" expanded="false" />
+            <element signature="method#Key#1;class#Key#0" expanded="false" />
+            <element signature="method#Key#2;class#Key#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/JCalculator.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="552">
+          <caret line="24" column="34" lean-forward="false" selection-start-line="24" selection-start-column="25" selection-end-line="24" selection-end-column="34" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/Expression.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="531">
-          <caret line="205" column="46" lean-forward="false" selection-start-line="205" selection-start-column="46" selection-end-line="205" selection-end-column="46" />
+        <state relative-caret-position="462">
+          <caret line="173" column="47" lean-forward="true" selection-start-line="173" selection-start-column="47" selection-end-line="173" selection-end-column="47" />
           <folding>
+            <element signature="method#Expression#0;class#Expression#0" expanded="false" />
             <element signature="method#isNum#0;class#Expression#0" expanded="false" />
-            <element signature="method#NextKeyOf#0;class#Expression#0" expanded="false" />
-            <element signature="method#PreKeyOf#0;class#Expression#0" expanded="false" />
             <element signature="method#setexprKeyArray#1;class#Expression#0" expanded="false" />
             <element signature="method#getexprKeyArrayDouble#0;class#Expression#0" expanded="false" />
             <element signature="method#getexprKeyArrayString#0;class#Expression#0" expanded="false" />
-            <marker date="1512568028483" expanded="false" signature="3064:3519" ph="..." />
-            <marker date="1512568028483" expanded="false" signature="4497:4731" ph="..." />
+            <marker date="1512739258210" expanded="false" signature="2231:2734" ph="..." />
+            <marker date="1512739258210" expanded="false" signature="3064:3190" ph="{...}" />
+            <marker date="1512739258210" expanded="false" signature="3225:3351" ph="{...}" />
+            <marker date="1512739258210" expanded="false" signature="3847:4153" ph="..." />
           </folding>
         </state>
       </provider>
